@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<div class="modal-shadow">
+    <a class="btn" id="J_refresh">Start</a>
+    <!--<a class="btn btn-refresh">重新开始</a>-->
+</div>
+
+<div class="wrap">
+    <div class="left-block left">
+        <ul id="J_list">
+        </ul>
+    </div>
+    <div class="right-block right">
+        <div class="intro">
+            <div class="info left">
+                <label>Instructions：</label>
+                <p>1：Press Start</p>
+                <p>2：If the target is in the array, press Y; otherwise press N</p>
+            </div>
+            <div class="set left">
+                <label>No. of distractors </label>
+                <input type="number" min="6" max="15" class="num" value="9" id="num-img">
+                <a class="btn" id="J_setting">set</a>
+            </div>
+        </div>
+        <div class="result-block">
+            <div class="bz-img left">
+                <label>target</label>
+                <img  >
+            </div>
+            <div class="result left">
+                <label>result：</label>
+                <span id="J_result"></span>
+            </div>
+        </div>
+        <div class="last-num">
+            <label>trials left:</label>
+            <span class="lastNum" id="J_lastNum">5</span>
+        </div>
+    </div>
+</div>
+<div class="wrap">
+    <table class="table-list">
+        <thead>
+        <tr>
+            <th>No</th>
+            <th>Start time</th>
+            <th>End time</th>
+            <th>reaction time</th>
+        </tr>
+        </thead>
+        <tbody id="J_body">
+        </tbody>
+
+    </table>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
